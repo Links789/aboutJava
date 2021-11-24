@@ -1,3 +1,97 @@
+# Basic Notes
+
+## 类基础
+
+Java程序的基本组成单元：类
+
+**类包含**：属性、方法
+
+每一个应用程序需要包含一个main()方法，含有main()方法的类被成为主类。
+
+Java文件名需要和类名称同名，**Java大小写敏感**
+
+### 示例
+
+```java
+pubilic class Book{
+	private String name;
+
+	//权限修饰符 返回值类型 方法名(参数){ }
+	public String getName(){   //方法
+		int id = 0;
+		setName("JAVA");
+		return id + this.name
+	}
+
+	private void setName(String name){
+		this.name = name;
+	}
+	
+	Public Book getBook(){
+		return this;
+	}
+}
+```
+
+
+
+## main()方法
+
+main()方法是类体中的主方法
+
+
+
+```java
+package hello; 			//包声明
+import java.util.Scanner;
+
+public class test {		//定义（创建）类
+	public static void main(String[] args) {  //主方法
+//main()方法的参数：权限修饰符、静态修饰符、返回值修饰符    字符串类型的数组
+
+		Scanner in = new Scanner(System.in);
+		System.out.println(in.nextLine());
+	}
+}
+```
+
+
+
+## I/O
+
+```java
+//Output:
+System.out.prinln("Print Here."); //'prinln' means Print Line
+
+//Input:
+import java.util.Scanner; 
+
+Scanner in = new Scanner(System.in);
+System.out.println(in.nextLine());
+```
+
+## 对象
+
+
+
+
+
+## 字符串
+
+Java将字符串作为对象来管理
+
+```java
+String st = new String("Hello!");
+```
+
+
+
+
+
+
+
+
+
 # Part1.类与对象
 
 ## 1.1 用类制造对象
